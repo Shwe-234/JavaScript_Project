@@ -6,10 +6,21 @@
 <script>
 $(document).ready(function(){
   $("button").click(function(){
-    $("#div1").fadeIn().fadeOut().fadeToggle().fadeTo("slow", 0.15);
-    $("#div2").fadeIn("slow").fadeOut("slow").fadeToggle()
-    $("#div3").fadeIn(2000).fadeOut(2000).fadeToggle()
+    $("#div1").fadeIn()
+    $("#div2").fadeIn("slow")
+    $("#div3").fadeIn(2000)
   });
+  $("button").click(function(){
+    $("#div1").fadeOut()
+    $("#div2").fadeOut("slow")
+    $("#div3").fadeOut(2000)
+  })
+  $("button").click(function(){
+    $("#div1").fadeToggle
+    $("#div2").fadeToggle
+    $("#div3").fadeToggle()
+    $("#div1").fadeTo("slow", 0.15)
+  })
 });
 </script>
 </head>
